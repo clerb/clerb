@@ -1,0 +1,5 @@
+._*
+.bundle
+.DS_Store
+db/*.db
+public/cache

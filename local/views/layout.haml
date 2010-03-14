@@ -1,0 +1,19 @@
+!!!html
+%html
+  %head
+    %title
+      CleRB - The Cleveland Ruby Brigade - Home
+    %link(href="/css/master.css" media="screen" rel="stylesheet" type="text/css")
+  %body
+    %h1 CleRB - The Cleveland Ruby Brigade
+    %header
+      %nav
+        %ul
+          %li
+            %a(href="/events") Our Events
+          %li
+            %a(href="/about") About CleRB
+          %li
+            %a(href="/resources") Ruby Resources
+    != yield
+    != haml :analytics, :layout => false
