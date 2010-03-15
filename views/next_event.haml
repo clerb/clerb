@@ -1,0 +1,11 @@
+%span At the next CleRB...
+%h2= event.title
+
+!= precede "Presented by " do
+  %strong= event.presenter_name
+!= precede "&ndash; " do
+  = event.blurb
+.event-date
+  != succeed " @ " do
+    = event.date.strftime("%B %e, %l:%M %P")
+  = event.location

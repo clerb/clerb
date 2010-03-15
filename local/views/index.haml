@@ -1,9 +1,5 @@
 .next-event.todo
-  %h3 Next Event
-  :markdown
-    **Playing with Ruby using RVM**  
-    _Monday March 22, 2010 **6:30pm**_ at [LeanDog](http://www.leandog.com)  
-    [more details](/events/playing-with-ruby-using-rvm) | [more events](/events)
+  != partial :next_event, :event => @next_event
 .posts.todo
   %article#post-1
     :markdown
