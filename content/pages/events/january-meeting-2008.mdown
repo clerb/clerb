@@ -1,0 +1,10 @@
+date: January 24, 2008 6:30 PM
+location: Victoria Insurance
+location_address: 5915 Landerbrook Dr Cleveland, OH 44124
+blurb: The January Meeting
+
+# The January Meeting
+
+We will be having 2 presentations and then time to socialize.
+
+

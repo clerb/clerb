@@ -1,0 +1,7 @@
+date: November 7, 2007 6:00 PM
+location: Red Robin
+blurb: Our first meeting ever!
+
+# Let's Make it Happen!
+
+This was our first meeting ever. Corey Haines, Gary Bernhardt, and Joe Fiorini discussed what they like about Ruby and what they want to see from a Ruby user group in Cleveland. Oh, the nostalgia!

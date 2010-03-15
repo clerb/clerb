@@ -1,0 +1,8 @@
+date: March 6, 2008 6:30 PM
+location: Champps Sports Bar
+location_address: 5989 Canal Rd. Cleveland, OH 44125
+blurb: The March Coding Dojo
+
+# The March Coding Dojo
+
+Coding Dojo

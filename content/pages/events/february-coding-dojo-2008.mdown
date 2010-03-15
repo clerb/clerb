@@ -1,0 +1,15 @@
+date: February 7, 2008 6:30 PM
+location: Champps Sports Bar
+location_address: 5989 Canal Rd. Cleveland, OH 44125
+blurb: The February Coding Dojo
+
+# The February Coding Dojo
+
+Phone: 216-328-0083  
+Fax: 216-328-0084  
+Location: 5989 Canal Rd.  
+Valley ViewOhio 44125
+
+
+
+
