@@ -1,0 +1,10 @@
+url: http://mislav.uniqpath.com/poignant-guide/
+date: Monday March 15, 2010
+from: [Why the Lucky Stiff](http://en.wikipedia.org/wiki/Why_the_lucky_stiff)
+topic: Getting Started
+sticky: true
+
+# Why's (Poignant) Guide to Ruby
+
+Why the Lucky Stiff may have [disappeared](http://ejohn.org/blog/eulogy-to-_why/), but thanks to [Mislav](http://mislav.uniqpath.com/) we still have his educational, quirky guide to learning Ruby.
+
