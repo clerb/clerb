@@ -1,0 +1,7 @@
+url: http://geekin.gs/using-amazon-aws-simpledb-with-ruby-roundup
+date: Sunday March 14, 2010
+from: [Geekin.gs](http://geekin.gs)
+
+# Using Amazon AWS SimpleDB with Ruby roundup
+
+Some great information on using Amazon AWS with SimpleDB.

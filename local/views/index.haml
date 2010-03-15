@@ -1,7 +1,7 @@
 .next-event
   != partial :next_event, :event => @next_event
 .posts.todo
-  != partial :post, :collection => @posts, :object => :post
+  != partial :grouped_post, :collection => @grouped_posts, :object => :post_group
 
 %h3 Sponsors
 .sponsors
