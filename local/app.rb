@@ -27,7 +27,7 @@ end
 get "/" do
   set_from_config(:google_analytics_code)
   @next_event = Event.next
-  @grouped_posts = Post.find_articles[0..10].to_set.classify { |p| p.date.strftime("%B %e, %Y") }
+  @grouped_posts = Post.find_articles[0..9].to_set.classify { |p| p.date.strftime("%B %e, %Y") }
   @resources = Post.find_sticky_resources
   cache haml(:index)
 end
