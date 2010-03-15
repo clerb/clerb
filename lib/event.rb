@@ -47,4 +47,8 @@ class Event < Page
     @location_address ||= metadata("location_address")
   end
 
+  def blurb
+    @blurb ||= metadata("blurb")
+  end
+
 end
