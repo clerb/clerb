@@ -9,17 +9,23 @@ class Event < Page
     end
 
     def upcoming(today=Date.today)
-      Event.find_all.reject do |event|
+      sort_asc(Event.find_all.reject do |event|
         event.date < today
-      end.sort do |a,b|
-        a.date <=> b.date
-      end
+      end)
     end
 
     def past(today=Date.today)
-      Event.find_all.reject do |event|
+      sort_desc(Event.find_all.reject do |event|
         event.date > today
-      end
+      end)
+    end
+
+    def sort_desc(events)
+      events.sort { |a,b| b.date <=> a.date }
+    end
+
+    def sort_asc(events)
+      events.sort { |a,b| a.date <=> b.date }
     end
 
     def model_path(basename=nil)
