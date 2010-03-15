@@ -20,7 +20,10 @@ helpers do
   end
 
   def pretty_date(date)
-    date.strftime("%B %e, %l:%M %P")
+    format = %w(%B %e,)
+    format = %w(%B %e %Y,) if date.year != Date.today.year
+    format << %w( %l:%M %P)
+    date.strftime(format.join(" "))
   end
 end
 
