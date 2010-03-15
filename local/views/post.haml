@@ -2,6 +2,6 @@
   %a{:href => post.url, :title => post.heading}= post.heading
 %span.from
   != precede "From: " do
-    = post.from
+    != post.from
 != post.body
 
