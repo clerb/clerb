@@ -1,7 +1,6 @@
 require File.join(File.dirname(__FILE__), 'models')
 
 class Event < Page
-  alias :title :heading
 
   class << self
 
@@ -29,6 +28,14 @@ class Event < Page
       File.join(*params)
     end
 
+  end
+
+  def title
+    heading
+  end
+
+  def permalink
+    "/events/%s" % super
   end
 
   def presenter_name

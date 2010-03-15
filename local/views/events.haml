@@ -1,0 +1,10 @@
+%h2 Events
+
+- if @upcoming_events.any?
+  %h3 Upcoming
+  %ul
+    != partial :collapsed_event, :collection => @upcoming_events, :object => :event
+- if @past_events.any?
+  %h3 Past
+  %ul
+    != partial :collapsed_event, :collection => @past_events, :object => :event

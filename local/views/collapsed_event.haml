@@ -1,0 +1,4 @@
+%li
+  != succeed " &ndash; " do
+    %a{ :href => event.permalink, :title => event.title }= event.title
+  = pretty_date(event.date)

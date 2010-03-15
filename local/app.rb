@@ -37,3 +37,10 @@ get "/resources" do
   @grouped_resources = Post.find_resources.to_set.classify { |r| r.topic }
   cache haml(:resources)
 end
+
+get "/events" do
+  set_from_config(:google_analytics_code)
+  @upcoming_events = Event.upcoming
+  @past_events = Event.past
+  cache haml(:events)
+end
