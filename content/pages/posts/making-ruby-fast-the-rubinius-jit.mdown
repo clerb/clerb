@@ -1,0 +1,7 @@
+url: http://www.engineyard.com/blog/2010/making-ruby-fast-the-rubinius-jit/
+date: Thursday March 11, 2010
+from: [Engine Yard](http://www.engineyard.com/blog)
+
+# Making Ruby Fast: The Rubinius JIT
+
+Rubinius is a Ruby VM written in Ruby and C. It's goal is to make Ruby faster and easier to extend. Engine Yard has a great article on how they are trying to accomplish this.

@@ -1,0 +1,7 @@
+url: http://lunarlogicpolska.com/blog/2010/02/15/mysql-and-mongodb-working-together-in-kanbanery
+date: Saturday March 13, 2010
+from: [lunar logic polska](http://lunarlogicpolska.com)
+
+# MySQL and MongoDB working together in Kanbanery
+
+How [lunar logic](http://lunarlogicpolska.com) is using MySQL and MongoDB side-by-side in their Kanban project management product.
