@@ -31,3 +31,9 @@ get "/" do
   @resources = Post.find_sticky_resources
   cache haml(:index)
 end
+
+get "/resources" do
+  set_from_config(:google_analytics_code)
+  @grouped_resources = Post.find_resources.to_set.classify { |r| r.topic }
+  cache haml(:resources)
+end

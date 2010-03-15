@@ -1,0 +1,8 @@
+%h2 Resources
+
+- @grouped_resources.each do |topic,resources|
+  %span= topic
+  - resources.each do |resource|
+    %h3
+      %a{:href => resource.url, :title => resource.heading}= resource.heading
+    != resource.body
