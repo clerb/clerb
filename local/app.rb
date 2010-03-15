@@ -8,14 +8,14 @@ helpers do
     if params.key?(:collection)
       collection_partial template, params.delete(:collection), params.delete(:object), params
     else
-      haml template, :layout => false, :escape_html => false, :locals => params
+      haml template, :layout => false, :locals => params
     end
   end
 
   def collection_partial(template, collection, object_name, params={})
     collection.map do |object|
       params.merge!(object_name => object)
-      haml template, :layout => false, :escape_html => false, :locals => params
+      haml template, :layout => false, :locals => params
     end.join
   end
 
