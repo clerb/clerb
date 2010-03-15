@@ -1,0 +1,7 @@
+url: http://szeryf.wordpress.com/2010/03/01/custom-shoulda-macros-a-tutorial/
+date: Friday March 12, 2010
+from: [require 'brain'](http://szeryf.wordpress.com/)
+
+# Custom Shoulda Macros &ndash; a tutorial
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sed nisi sapien, at ullamcorper justo. Curabitur eu leo at nisi sodales condimentum a eu enim. Donec vel cursus lacus. Vestibulum aliquam quam at turpis auctor ullamcorper. Phasellus elementum pretium mi id commodo. Aenean in urna id lectus sollicitudin auctor at hendrerit magna. Sed eget tellus eu diam rhoncus elementum a vitae tellus. Sed adipiscing feugiat est sed pretium. Duis eu risus eget mi fermentum venenatis. Suspendisse non nisi metus. Suspendisse luctus blandit sapien, in commodo neque tincidunt nec. Sed eget dui et urna adipiscing scelerisque. Maecenas nulla magna, consectetur quis ornare sed, aliquam id lacus. Nunc in vulputate lacus.

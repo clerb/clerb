@@ -1,0 +1,8 @@
+url: http://lucidcode.co.nz/blog/archives/2010/03/02/testing-email-delivery-in-rails-with-gmail-httparty/
+date: Friday March 12, 2010
+from: [Lucid Code](http://lucidcode.co.nz/)
+
+# Testing email delivery in Rails with Gmail & HTTParty
+
+Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis id odio enim, ac pulvinar sapien. Aenean a erat eget nibh euismod interdum sit amet et odio. Duis lorem ligula, sollicitudin eu tempor nec, malesuada vitae eros. Aenean dapibus elementum tellus nec fermentum. Nullam tempor commodo euismod. Suspendisse cursus porta dolor ut molestie. Nunc congue euismod aliquet. Fusce vestibulum quam eu arcu rutrum eu placerat ipsum aliquam. Cras porta sem in erat mollis interdum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas vel massa a odio pharetra facilisis. Maecenas id diam nisl, eget posuere ipsum. In hac habitasse platea dictumst. Nulla porta adipiscing purus eu ultrices. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Proin nec nisi non mi convallis vulputate in ac sem.
+

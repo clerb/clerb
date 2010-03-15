@@ -1,19 +1,7 @@
 .next-event
   != partial :next_event, :event => @next_event
 .posts.todo
-  %article#post-1
-    :markdown
-      ####[Custom Shoulda Macros &ndash; a tutorial](http://szeryf.wordpress.com/2010/03/01/custom-shoulda-macros-a-tutorial/)  
-      _Friday March 12, 2010_ by **joe**
-
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sed nisi sapien, at ullamcorper justo. Curabitur eu leo at nisi sodales condimentum a eu enim. Donec vel cursus lacus. Vestibulum aliquam quam at turpis auctor ullamcorper. Phasellus elementum pretium mi id commodo. Aenean in urna id lectus sollicitudin auctor at hendrerit magna. Sed eget tellus eu diam rhoncus elementum a vitae tellus. Sed adipiscing feugiat est sed pretium. Duis eu risus eget mi fermentum venenatis. Suspendisse non nisi metus. Suspendisse luctus blandit sapien, in commodo neque tincidunt nec. Sed eget dui et urna adipiscing scelerisque. Maecenas nulla magna, consectetur quis ornare sed, aliquam id lacus. Nunc in vulputate lacus.
-
-  %article#post-2
-    :markdown
-      ####[Testing email delivery in Rails with Gmail & HTTParty](http://lucidcode.co.nz/blog/archives/2010/03/02/testing-email-delivery-in-rails-with-gmail-httparty/)
-      _Thursday March 11, 2010_ by **jonathan**
-
-      Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis id odio enim, ac pulvinar sapien. Aenean a erat eget nibh euismod interdum sit amet et odio. Duis lorem ligula, sollicitudin eu tempor nec, malesuada vitae eros. Aenean dapibus elementum tellus nec fermentum. Nullam tempor commodo euismod. Suspendisse cursus porta dolor ut molestie. Nunc congue euismod aliquet. Fusce vestibulum quam eu arcu rutrum eu placerat ipsum aliquam. Cras porta sem in erat mollis interdum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas vel massa a odio pharetra facilisis. Maecenas id diam nisl, eget posuere ipsum. In hac habitasse platea dictumst. Nulla porta adipiscing purus eu ultrices. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Proin nec nisi non mi convallis vulputate in ac sem.
+  != partial :post, :collection => @posts, :object => :post
 
 %h3 Sponsors
 .sponsors
