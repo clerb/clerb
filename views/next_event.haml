@@ -7,5 +7,5 @@
   = event.blurb
 .event-date
   != succeed " @ " do
-    = event.date.strftime("%B %e, %l:%M %P")
+    = pretty_date(event.date)
   = event.location

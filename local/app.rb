@@ -6,6 +6,10 @@ helpers do
   def partial(template, params={})
     haml template, :layout => false, :escape_html => false, :locals => params
   end
+
+  def pretty_date(date)
+    date.strftime("%B %e, %l:%M %P")
+  end
 end
 
 get "/" do
