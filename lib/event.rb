@@ -5,7 +5,12 @@ class Event < Page
 
   class << self
 
-    def next
+    def next(today=Date.today)
+      Event.find_all.reject do |event|
+        event.date < today
+      end.sort do |a,b|
+        a.date <=> b.date
+      end.first
     end
 
     def upcoming

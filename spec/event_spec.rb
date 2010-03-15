@@ -23,4 +23,17 @@ describe "Event" do
     Event.find_by_path("my-event").heading.should == "My event"
   end
 
+  it "should find next event" do
+    create_event(:heading => "Past event",
+                 :metadata => { "date" => "February 22, 2010" },
+                 :path => "events/past-event")
+    create_event(:heading => "Next event",
+                 :metadata => { "date" => "May 24, 2010" },
+                 :path => "events/next-event")
+    create_event(:heading => "Not next event",
+                 :metadata => { "date" => "June 22, 2010" },
+                 :path => "events/not-next-event")
+    Event.next(Date.parse("March 14, 2010")).heading.should == "Next event"
+  end
+
 end
