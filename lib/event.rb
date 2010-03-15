@@ -17,7 +17,10 @@ class Event < Page
       end
     end
 
-    def past
+    def past(today=Date.today)
+      Event.find_all.reject do |event|
+        event.date > today
+      end
     end
 
     def model_path(basename=nil)

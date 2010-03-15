@@ -5,6 +5,9 @@ describe "Event" do
   include EventFactory
 
   def create_events
+    create_event(:heading => "Past past event",
+                 :metadata => { "date" => "January 20, 2010" },
+                 :path => "events/past-past-event")
     create_event(:heading => "Past event",
                  :metadata => { "date" => "February 22, 2010" },
                  :path => "events/past-event")
@@ -47,6 +50,11 @@ describe "Event" do
   it "should find upcoming events" do
     create_events
     Event.upcoming(today).map(&:heading).should == ["Next event", "Next next event"]
+  end
+
+  it "should find past events" do
+    create_events
+    Event.past(today).map(&:heading).should == ["Past event", "Past past event"]
   end
 
 end
