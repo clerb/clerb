@@ -1,0 +1,9 @@
+url: http://advance2030.wordpress.com/2010/02/25/ruby-on-rails-101/
+date: Monday March 15, 2010
+from: [Advance 20/30](http://advance2030.wordpress.com)
+topic: Getting Started
+sticky: true
+
+# Ruby on Rails 101
+
+A collection of links to help you get started using Ruby on Rails on any platform.

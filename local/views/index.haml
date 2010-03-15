@@ -3,6 +3,9 @@
 .posts.todo
   != partial :grouped_post, :collection => @grouped_posts, :object => :post_group
 
+%span.resources
+  != partial :resource, :collection => @resources, :object => :resource
+
 %h3 Sponsors
 .sponsors
   %img(src="/images/engineyard.gif")
