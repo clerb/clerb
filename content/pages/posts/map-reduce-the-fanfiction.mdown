@@ -1,0 +1,7 @@
+url: http://www.snailinaturtleneck.com/blog/2010/03/15/mapreduce-the-fanfiction/
+date: Tuesday March 15, 2010
+from: [Snail in a Turtleneck](http://www.snailinaturtleneck.com/)
+
+# MapReduce the Fanfiction
+
+Design patterns + Star Trek = awesome. An entertaining, creative explanation of the MapReduce pattern. Read this if you want to try a NoSQL databases, or are just a design pattern nerd.
