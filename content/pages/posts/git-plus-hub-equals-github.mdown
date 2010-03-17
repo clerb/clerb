@@ -1,0 +1,8 @@
+url: http://defunkt.github.com/hub/hub.1.html
+date: March 16, 2010
+from: [defunkt](http://defunkt.github.com/)
+
+# Git + Hub = Github
+
+[Git](http://git-scm.com) is great. [Github](http://github.com) makes it even better. Now imagine if the two got together. Now they have. Hub tells git how to interact with Github. If you keep your projects on Github, this is well worth checking out.
+
