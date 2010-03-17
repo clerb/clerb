@@ -9,11 +9,11 @@
   %body
     %header
       .container
-        != haml :nav, :layout => false
+        != partial :nav
     #container
       #wrapper
         != yield
     %footer.row
-      != haml :nav, :layout => false
-      != haml :sponsors, :layout => false
-    != haml :analytics, :layout => false
+      != partial :nav
+      != partial :sponsors
+    != partial :analytics
