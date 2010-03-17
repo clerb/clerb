@@ -1,5 +1,6 @@
 %span At the next CleRB...
-%h2= event.title
+%h2
+  %a{:href => event.permalink, :title => event.title}= event.title
 
 != precede "Presented by " do
   %strong= event.presenter_name
