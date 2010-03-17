@@ -1,0 +1,7 @@
+url: http://www.khelll.com/blog/ruby/stackoverflow-cool-ruby-questions-4/
+date: Wednesday March 17, 2010
+from: [Khaled alHabache's official blog](http://www.khelll.com/blog/)
+
+# StackOverflow cool Ruby questions 4
+
+4 great questions about Ruby metaprogramming asked on StackOverflow. Includes the answers. I definitely learned a couple things reading it.
