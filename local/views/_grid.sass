@@ -1,0 +1,68 @@
+!site_width = (!grid_columns * !grid_column_width) + (!grid_columns * !grid_gutter_width)
+
+=grid(!num)
+  width = (!num * !grid_column_width) + ((!num - 1) * !grid_gutter_width)
+
+=grid_left_margin(!num)
+  margin-left = (!num * !grid_column_width) + ((!num - 1) * !grid_gutter_width) + (!grid_gutter_width / 2)
+
+=full_grid_width
+  width = !site_width
+
+@for !i from 1 through !grid_columns
+  .grid_#{!i}
+    +grid(!i)
+
+.column
+  margin: 0 #{!grid_gutter_width / 2}
+  overflow: hidden
+  float: left
+  display: inline
+
+.row
+  width = !site_width
+    margin: 0 auto
+  overflow: auto
+
+  .row
+    margin: 0 #{0 - !grid_gutter_width / 2}
+    width: auto
+    display: inline-block
+
+// Typography
+
+body
+  font-size = !font_size
+  line-height = !line_height
+
+p
+  margin-bottom = !line_height
+  line-height = !line_height
+  font-size = !font_size
+
+h1, h2
+  line-height = !line_height * 2
+  margin-bottom = !line_height
+
+h3
+  font-size = !font_size * 1.0
+  line-height = !line_height * 2
+  margin-bottom = !line_height
+
+h4
+  text-transform: uppercase
+  font-weight: normal
+  font-size = !font_size * 1.0
+  line-height = !line_height * 2
+  margin-bottom = !line_height
+
+h1
+  font-size = !font_size * 1.50
+
+ul, ol
+  margin-bottom = !line_height
+
+  li
+    line-height = !line_height
+    margin-left: 30px
+    margin-bottom: 1em
