@@ -1,0 +1,15 @@
+%h1= @event.title
+
+!= precede "Presented by " do
+  %strong= @event.presenter_name
+!= precede "&ndash; " do
+  != @event.body
+.event-date
+  != succeed " @ " do
+    = pretty_date(@event.date)
+  = @event.location
+%h2
+  != precede "About " do
+    = @event.presenter_name
+  = @event.presenter_bio
+

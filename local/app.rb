@@ -47,3 +47,9 @@ get "/events" do
   @past_events = Event.past
   cache haml(:events)
 end
+
+get "/events/*" do
+  set_from_config(:google_analytics_code)
+  @event = Event.find_by_path(File.join(params[:splat]))
+  cache haml(:event)
+end
