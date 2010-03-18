@@ -31,6 +31,10 @@ helpers do
       block.call
     end
   end
+
+  def builder(template, options = {}, &block)
+    super(template, options.merge(render_options(:builder, template)), &block)
+  end
 end
 
 get "/" do
@@ -63,5 +67,5 @@ end
 get "/posts.xml" do
   content_type :xml, :charset => "utf-8"
   @posts = Post.find_articles[0..9]
-  cache builder(:posts, :views => File.join("local", "views"))
+  cache builder(:posts)
 end
