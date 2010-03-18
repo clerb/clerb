@@ -25,6 +25,12 @@ helpers do
     format << %w( %l:%M %P)
     date.strftime(format.join(" "))
   end
+
+  def with_presenter(event, &block)
+    if !event.presenter_name.nil?
+      block.call
+    end
+  end
 end
 
 get "/" do
