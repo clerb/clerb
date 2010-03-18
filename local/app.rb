@@ -59,3 +59,9 @@ get "/events/*" do
   @event = Event.find_by_path(File.join(params[:splat]))
   cache haml(:event)
 end
+
+get "/posts.xml" do
+  content_type :xml, :charset => "utf-8"
+  @posts = Post.find_articles[0..9]
+  cache builder(:posts, :views => File.join("local", "views"))
+end
