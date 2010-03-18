@@ -1,6 +1,5 @@
 date: April 3, 2008 6:30 PM
 location: Champps Sports Bar
-location_address: 5989 Canal Rd. Cleveland, OH 44125
 blurb: The April Coding Dojo
 
 # The April Coding Dojo

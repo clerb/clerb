@@ -1,6 +1,5 @@
 date: March 20, 2008 6:30 PM
 location: Victoria Insurance
-location_address: 5915 Landerbrook Dr Cleveland, OH 44124
 blurb: The March Meeting
 
 # The March Meeting

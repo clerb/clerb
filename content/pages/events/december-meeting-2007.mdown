@@ -1,6 +1,5 @@
 date: December 13, 2007 6:30 PM
 location: Victoria Insurance
-location_address: 5915 Landerbrook Dr Cleveland, OH 44124
 blurb: The December Meeting
 
 # The December Meeting
