@@ -69,3 +69,9 @@ get "/posts.xml" do
   @posts = Post.find_articles[0..9]
   cache builder(:posts)
 end
+
+get "/events.xml" do
+  content_type :xml, :charset => "utf-8"
+  @events = Event.upcoming
+  cache builder(:events)
+end
