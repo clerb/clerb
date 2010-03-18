@@ -1,4 +1,5 @@
 require File.join(File.dirname(__FILE__), 'models')
+require File.join(File.dirname(__FILE__), 'location')
 
 class Event < Page
 
@@ -53,11 +54,15 @@ class Event < Page
   end
 
   def location
-    @location ||= metadata("location")
+    @location ||= Location.find_by_name(metadata("location"))
+  end
+
+  def location_name
+    @location_name ||= location.name
   end
 
   def location_address
-    @location_address ||= metadata("location_address")
+    @location_address ||= location.address
   end
 
   def blurb

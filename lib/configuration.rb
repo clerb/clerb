@@ -51,6 +51,10 @@ module Nesta
     def self.attachment_path(basename = nil)
       get_path(File.join(content_path, "attachments"), basename)
     end
+
+    def self.locations_path
+      get_path(File.join(content_path, "locations.yml"))
+    end
     
     private
       def self.environment
@@ -66,7 +70,7 @@ module Nesta
         configuration[key].nil? ? default : configuration[key]
       end
       
-      def self.get_path(dirname, basename)
+      def self.get_path(dirname, basename=nil)
         basename.nil? ? dirname : File.join(dirname, basename)
       end
   end

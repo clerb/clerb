@@ -6,7 +6,7 @@
 .event-date
   != succeed " @ " do
     = pretty_date(@event.date)
-  = @event.location
+  = @event.location_name
   %a{ :href => "http://maps.google.com/?q=#{ @event.location_address}", :title => "Get directions" } Get Directions
 - with_presenter(@event) do
   %h2
