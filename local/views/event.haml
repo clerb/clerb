@@ -2,8 +2,7 @@
 - with_presenter(@event) do
   != precede "Presented by " do
     %strong= @event.presenter_name
-!= precede "&ndash; " do
-  != @event.body
+!= @event.body
 .event-date
   != succeed " @ " do
     = pretty_date(@event.date)
