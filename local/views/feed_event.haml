@@ -1,0 +1,18 @@
+!= succeed " @ " do
+  = pretty_date(event.date)
+= event.location_name
+%a{ :href => "http://maps.google.com/?q=#{ event.location_address}", :title => "Get directions" } Get Directions
+
+- with_presenter(event) do
+  %p
+    != precede "Presented by " do
+      %strong= event.presenter_name
+
+!= event.body
+
+- with_presenter(event) do
+  %h2
+    != precede "About " do
+      = event.presenter_name
+  = event.presenter_bio
+

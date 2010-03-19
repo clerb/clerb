@@ -16,7 +16,7 @@ xml.feed :xmlns => "http://www.w3.org/2005/Atom" do
                :type => "text/html",
                :rel => "alternate"
       xml.id atom_id(event)
-      xml.content event.body, :type => "html"
+      xml.content partial(:feed_event, :event => event), :type => "html"
       xml.published event.date(:xmlschema)
     end
   end
