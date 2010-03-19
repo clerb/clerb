@@ -1,0 +1,6 @@
+%p
+  != precede "From: " do
+    != post.from
+!= post.body
+%p
+  %a{ :href => post.permalink, :title => post.heading } permalink

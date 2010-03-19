@@ -12,11 +12,11 @@ xml.feed :xmlns => "http://www.w3.org/2005/Atom" do
   @posts.each do |post|
     xml.entry do
       xml.title post.heading
-      xml.link :href => url_for(post),
+      xml.link :href => post.url,
                :type => "text/html",
                :rel => "alternate"
       xml.id atom_id(post)
-      xml.content post.body, :type => "html"
+      xml.content partial(:feed_post, :post => post), :type => "html"
       xml.published post.date(:xmlschema)
       post.categories.each do |category|
         xml.category :term => category.permalink

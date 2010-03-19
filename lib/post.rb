@@ -21,6 +21,10 @@ class Post < Page
 
   end
 
+  def permalink
+    "/posts/%s" % super
+  end
+
   def topic
     @topic ||= metadata("topic")
   end
