@@ -104,3 +104,37 @@ blockquote
   margin-left: 0px
   background-repeat: no-repeat
 
+.next-event
+
+  h2
+    font-family: Georgia, serif
+    font-size: 3em
+    line-height: 1.5em
+    text-shadow: #111 2px 2px 2px
+    font-weight: normal
+
+    a
+      text-decoration: none
+      color: #d7caa0
+      &:hover
+        text-decoration: underline
+
+  .content
+    color: #d7caa0
+
+  .presenter
+    color: white
+
+  .next-blurb
+    color: #8b8986
+    position: relative
+    top: .5em
+    font-size: 1.2em
+
+  .event-date
+    +grid_left_margin(8)
+    +grid(4)
+
+    .event-button
+      border: solid 1px red
+      text-align: center

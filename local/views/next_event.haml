@@ -1,12 +1,18 @@
-%span At the next CleRB...
-%h2
-  %a{:href => event.permalink, :title => event.title}= event.title
+.row
+  .next-blurb At the next CleRb...
+  %h2
+    %a{:href => event.permalink, :title => event.title}= event.title
 
-!= precede "Presented by " do
-  %strong= event.presenter_name
-!= precede "&ndash; " do
-  = event.blurb
-.event-date
-  != succeed " @ " do
-    = pretty_date(event.date)
-  = event.location_name
+  .content
+    %span.presenter
+      != precede "Presented by " do
+        %strong= event.presenter_name
+    != precede "&ndash; " do
+      = event.blurb
+
+.row
+  .event-column.column
+    .event-date
+      != succeed " @ " do
+        = pretty_date(event.date)
+      = event.location_name
