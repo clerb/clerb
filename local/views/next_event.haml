@@ -11,8 +11,8 @@
       = event.blurb
 
 .row
-  .event-column.column
-    .event-date
+  .event-date.column
+    .event-button
       != succeed " @ " do
         = pretty_date(event.date)
       = event.location_name
