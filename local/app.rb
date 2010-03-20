@@ -35,6 +35,11 @@ helpers do
   def builder(template, options = {}, &block)
     super(template, options.merge(render_options(:builder, template)), &block)
   end
+
+  def page_wrapper(&block)
+    page_class = eval("if defined?(page_class) then page_class end", block.binding)
+    haml_tag(:div, :class => page_class, &block)
+  end
 end
 
 get "/" do
@@ -67,7 +72,7 @@ end
 get "/posts/*" do
   set_from_config(:google_analytics_code)
   @post = Post.find_by_path(File.join(params[:splat]))
-  cache haml(:post, :locals => { :post => @post })
+  cache haml(:post, :locals => { :post => @post, :page_class => "post" })
 end
 
 get "/posts.xml" do

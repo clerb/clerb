@@ -17,7 +17,8 @@
         != partial :nav
     #container
       #wrapper
-        != yield
+        - page_wrapper do
+          != yield
     %footer.row
       != partial :nav
       != partial :sponsors
