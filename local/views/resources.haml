@@ -1,7 +1,10 @@
-%h2 Resources
+%h1 Resources
+%span.note
+  != surround "Have a resource that helped you? Send us the URL at ", "." do
+    %a(href="mailto:resources@clerb.org" title="Submit your resources!") resources@clerb.org
 
 - @grouped_resources.each do |topic,resources|
-  %span= topic
+  %h2= topic
   - resources.each do |resource|
     %h3
       %a{:href => resource.url, :title => resource.heading}= resource.heading
