@@ -1,10 +1,10 @@
 .next-event
-  != partial :next_event, :event => @next_event
+  != partial :next_event, :event => next_event
 
 .row
   .posts.todo.column.grid_7
-    != partial :grouped_post, :collection => @grouped_posts, :object => :post_group
+    != partial :grouped_post, :collection => grouped_posts, :object => :post_group
 
   .resources.column.grid_5
-    != partial :resource, :collection => @resources, :object => :resource
+    != partial :resource, :collection => resources, :object => :resource
 

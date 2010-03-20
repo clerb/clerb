@@ -1,16 +1,16 @@
-%h1= @event.title
-- with_presenter(@event) do
+%h1= event.title
+- with_presenter(event) do
   != precede "Presented by " do
-    %strong= @event.presenter_name
-!= @event.body
+    %strong= event.presenter_name
+!= event.body
 .event-date
   != succeed " @ " do
-    = pretty_date(@event.date)
-  = @event.location_name
-  %a{ :href => "http://maps.google.com/?q=#{ @event.location_address}", :title => "Get directions" } Get Directions
-- with_presenter(@event) do
+    = pretty_date(event.date)
+  = event.location_name
+  %a{ :href => "http://maps.google.com/?q=#{ event.location_address}", :title => "Get directions" } Get Directions
+- with_presenter(event) do
   %h2
     != precede "About " do
-      = @event.presenter_name
-  = @event.presenter_bio
+      = event.presenter_name
+  = event.presenter_bio
 

@@ -44,35 +44,35 @@ end
 
 get "/" do
   set_from_config(:google_analytics_code)
-  @next_event = Event.next
-  @grouped_posts = Post.find_articles[0..9].to_set.classify { |p| p.date.strftime("%B %e, %Y") }
-  @resources = Post.find_sticky_resources
-  cache haml(:index)
+  next_event = Event.next
+  grouped_posts = Post.find_articles[0..9].to_set.classify { |p| p.date.strftime("%B %e, %Y") }
+  resources = Post.find_sticky_resources
+  cache haml(:index, :locals => { :next_event => next_event, :grouped_posts => grouped_posts, :resources => resources })
 end
 
 get "/resources" do
   set_from_config(:google_analytics_code)
-  @grouped_resources = Post.find_resources.to_set.classify { |r| r.topic }
-  cache haml(:resources)
+  grouped_resources = Post.find_resources.to_set.classify { |r| r.topic }
+  cache haml(:resources, :locals => { :grouped_resources => grouped_resources })
 end
 
 get "/events" do
   set_from_config(:google_analytics_code)
-  @upcoming_events = Event.upcoming
-  @past_events = Event.past
-  cache haml(:events)
+  upcoming_events = Event.upcoming
+  past_events = Event.past
+  cache haml(:events, :locals => { :upcoming_events => upcoming_events, :past_events => past_events })
 end
 
 get "/events/*" do
   set_from_config(:google_analytics_code)
-  @event = Event.find_by_path(File.join(params[:splat]))
-  cache haml(:event)
+  event = Event.find_by_path(File.join(params[:splat]))
+  cache haml(:event, :locals => { :event => event })
 end
 
 get "/posts/*" do
   set_from_config(:google_analytics_code)
-  @post = Post.find_by_path(File.join(params[:splat]))
-  cache haml(:post, :locals => { :post => @post, :page_class => "post" })
+  post = Post.find_by_path(File.join(params[:splat]))
+  cache haml(:post, :locals => { :post => post, :page_class => "post" })
 end
 
 get "/posts.xml" do

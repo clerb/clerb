@@ -3,7 +3,7 @@
   != surround "Have a resource that helped you? Send us the URL at ", "." do
     %a(href="mailto:resources@clerb.org" title="Submit your resources!") resources@clerb.org
 
-- @grouped_resources.each do |topic,resources|
+- grouped_resources.each do |topic,resources|
   %h2= topic
   - resources.each do |resource|
     %h3
