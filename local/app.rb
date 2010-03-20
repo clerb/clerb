@@ -64,6 +64,12 @@ get "/events/*" do
   cache haml(:event)
 end
 
+get "/posts/*" do
+  set_from_config(:google_analytics_code)
+  @post = Post.find_by_path(File.join(params[:splat]))
+  cache haml(:post, :locals => { :post => @post })
+end
+
 get "/posts.xml" do
   content_type :xml, :charset => "utf-8"
   @posts = Post.find_articles[0..9]
