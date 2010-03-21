@@ -8,6 +8,8 @@ require "lib/cache"
 require "lib/configuration"
 require "lib/models"
 
+enable :raise_errors
+
 set :cache_enabled, Nesta::Configuration.cache
 
 helpers do

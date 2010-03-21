@@ -7,6 +7,7 @@ gem "RedCloth", "4.2.2"
 gem "sinatra", "1.0.b"
 gem "ri_cal", "0.8.5"
 gem "tzinfo", "0.3.17"
+gem "hoptoad_notifier", "2.2.2"
 
 group :development do
   gem "shotgun"

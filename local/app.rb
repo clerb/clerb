@@ -99,6 +99,10 @@ get "/posts.xml" do
   cache builder(:posts)
 end
 
+get "/error" do
+  raise
+end
+
 mime_type :calendar, 'text/calendar'
 
 get "/CleRB-Events.ics" do
