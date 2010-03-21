@@ -90,7 +90,7 @@ end
 
 mime_type :calendar, 'text/calendar'
 
-get "/events.ics" do
+get "/CleRB-Events.ics" do
   content_type :calendar, :charset => "utf-8"
   @events = Event.upcoming
   cache ical(:events)
