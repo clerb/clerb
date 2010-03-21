@@ -181,9 +181,14 @@ blockquote
       text-align: center
 
 .posts
-  .date
+  .group
     color: #6c6757
     font-size: .8em
+    background-image: url(/images/border_line.png)
+    background-repeat: repeat-x
+    padding-top: .5em
+    padding-bottom: 1em
+    width: 90%
 
   a.permalink
     background-image: url('/images/icons/permalink.gif')
@@ -217,9 +222,37 @@ blockquote
   .body p
     font-size: .8em
 
+  .post
+    margin-bottom: 2em
+    background-image: url(/images/bullet_arrow.png)
+    background-repeat: no-repeat
+    background-position: 0px 5px
+    padding-left: 45px
 
 .big-divider
   padding-top: 60px
   margin-top: 40px
   background-image: url(/images/big_divider.png)
   background-repeat: no-repeat
+
+
+.resources
+  h3
+    margin: 0
+    a
+      text-decoration: none
+      text-shadow: #111 2px 1px 2px
+
+      &:hover
+        text-decoration: underline
+
+  .resource
+    margin-bottom: 2em
+    background-image: url(/images/bullet_bracket.png)
+    background-repeat: no-repeat
+    background-position: 0px 12px
+    padding-left: 25px
+
+    .body p
+      color= !yellow
+      font-size: .8em

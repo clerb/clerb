@@ -1,3 +1,6 @@
-%h3
-  %a{ :href => resource.url, :title => resource.heading }= resource.heading
-!= resource.body
+.resource
+  %h3
+    %a{ :href => resource.url, :title => resource.heading }= resource.heading
+
+  .body
+    != resource.body

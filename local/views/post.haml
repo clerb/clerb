@@ -1,9 +1,10 @@
-%h3
-  %a{:href => post.url, :title => post.heading}= post.heading
-%span.from
-  != precede "From: " do
-    != post.from
-.body
-  != post.body
-%a{:href => post.permalink, :title => post.heading, :class => "permalink"} permalink
+.post
+  %h3
+    %a{:href => post.url, :title => post.heading}= post.heading
+  %span.from
+    != precede "From: " do
+      != post.from
+  .body
+    != post.body
+  %a{:href => post.permalink, :title => post.heading, :class => "permalink"} permalink
 
