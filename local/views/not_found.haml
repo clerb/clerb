@@ -1,0 +1,12 @@
+%h1 Page not found
+
+%p
+  The page you were looking for could not be found.
+%p
+  != precede "Try going to our " do
+    %strong
+      %a(href="/" title="Home") homepage
+  != surround "or are you looking for ", "?" do
+    %strong
+      %a(href="/events/next" title="Next Event") our next event
+  
