@@ -30,4 +30,4 @@ development:
 production:
   cache: true
   content: content
-  # google_analytics_code: "UA-???????-?"
+  google_analytics_code: "UA-4828879-1"
