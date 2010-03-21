@@ -2,6 +2,10 @@
 @import reset.sass
 @import grid.sass
 
+!yellow = #d7caa0
+!red = #cb4d29
+!medium_grey = #2a2c2b
+!dark_grey = #1e1e20
 
 body
   background-color: #1e1e20
@@ -15,6 +19,45 @@ body
 #wrapper
   +full_grid_width
   margin: 0 auto
+  .page
+    padding-top: 1em
+    padding-bottom: 2em
+    h1
+      :color= !yellow
+      font-family: Georgia, serif
+      font-size: 2em
+      line-height: 1.5em
+      text-shadow: #111 2px 2px 2px
+      font-weight: normal
+  .event
+    .date
+      :color= !red
+      position: relative
+      top: .5em
+      font-size: 1em
+    em
+      display: block
+      width: 50%
+      padding-bottom: 5px
+      margin-bottom: 5px
+      text-transform: uppercase
+      border-bottom: solid 2px
+      :border-bottom-color= !medium_grey
+      font-style: normal
+    .presenter
+      font-size: .9em
+      strong
+        :color= !yellow
+      .bio
+        padding-top: 5px
+        padding-bottom: 20px
+        width: 50%
+    .venue
+      font-size: .9em
+      strong
+        :color= !yellow
+        display: block
+
 
 nav
   ul
@@ -80,7 +123,7 @@ footer
 
   .sponsors
     +grid(6)
-    padding-top: 1em
+    padding-top: 1em.to_s
     text-align: right
 
     a
@@ -105,7 +148,6 @@ blockquote
   background-repeat: no-repeat
 
 .next-event
-  padding-top: 1em
 
   h2
     font-family: Georgia, serif
@@ -116,10 +158,10 @@ blockquote
 
     a
       text-decoration: none
-      color: #d7caa0
+      :color= !yellow
 
   .content
-    color: #d7caa0
+    :color= !yellow
 
   .presenter
     color: white
