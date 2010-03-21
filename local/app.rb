@@ -75,6 +75,12 @@ get "/events" do
   cache haml(:events, :locals => { :upcoming_events => upcoming_events, :past_events => past_events, :page_class => 'events' })
 end
 
+get "/events/next" do
+  set_from_config(:google_analytics_code)
+  event = Event.next
+  cache haml(:event, :locals => { :event => event, :page_class => "event" })
+end
+
 get "/events/*" do
   set_from_config(:google_analytics_code)
   event = Event.find_by_path(File.join(params[:splat]))
