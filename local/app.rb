@@ -73,7 +73,7 @@ end
 get "/posts/*" do
   set_from_config(:google_analytics_code)
   post = Post.find_by_path(File.join(params[:splat]))
-  cache haml(:post, :locals => { :post => post, :page_class => "post" })
+  cache haml(:post_full, :locals => { :post => post, :page_class => "post" })
 end
 
 get "/posts.xml" do
