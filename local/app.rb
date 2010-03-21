@@ -37,7 +37,8 @@ helpers do
   end
 
   def page_wrapper(&block)
-    page_class = eval("if defined?(page_class) then page_class end", block.binding)
+    page_class = "page"
+    page_class << eval("if defined?(page_class) then ' %s' % page_class end", block.binding).to_s
     haml_tag(:div, :class => page_class, &block)
   end
 end
