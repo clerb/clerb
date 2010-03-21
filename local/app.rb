@@ -1,5 +1,6 @@
 require 'lib/event'
 require 'lib/post'
+require 'lib/tilt/vpim_template'
 
 set :haml, { :format => :html5, :escape_html => true, :attr_wrapper => '"' }
 
@@ -57,6 +58,11 @@ get "/resources" do
   cache haml(:resources, :locals => { :grouped_resources => grouped_resources })
 end
 
+def vpim(template=nil, options={}, locals={}, &block)
+  template = Proc.new { block } if template.nil?
+  render :vpim, template, options.merge(render_options(:vpim, template)), locals
+end
+
 get "/events" do
   set_from_config(:google_analytics_code)
   upcoming_events = Event.upcoming
@@ -82,8 +88,10 @@ get "/posts.xml" do
   cache builder(:posts)
 end
 
-get "/events.xml" do
-  content_type :xml, :charset => "utf-8"
+mime_type :calendar, 'text/calendar'
+
+get "/events.ics" do
+  content_type :calendar, :charset => "utf-8"
   @events = Event.upcoming
-  cache builder(:events)
+  cache vpim(:events)
 end
