@@ -2,6 +2,7 @@
   .column
     .next-blurb At the next CleRb...
     %h2
+      != partial :ical_link
       %a{:href => event.permalink, :title => event.title}= event.title
 
     .content

@@ -42,6 +42,11 @@ helpers do
     page_class << eval("if defined?(page_class) then ' %s' % page_class end", block.binding).to_s
     haml_tag(:div, :class => page_class, &block)
   end
+
+  def url_for_ical
+    basename = "CleRB-Events.ics"
+    path = "webcal://%s/%s" % [request.host, basename]
+  end
 end
 
 get "/" do
@@ -67,7 +72,7 @@ get "/events" do
   set_from_config(:google_analytics_code)
   upcoming_events = Event.upcoming
   past_events = Event.past
-  cache haml(:events, :locals => { :upcoming_events => upcoming_events, :past_events => past_events })
+  cache haml(:events, :locals => { :upcoming_events => upcoming_events, :past_events => past_events, :page_class => 'events' })
 end
 
 get "/events/*" do
