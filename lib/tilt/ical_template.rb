@@ -3,7 +3,7 @@ require 'sinatra/tilt'
 module Tilt
   # Vpim template implementation. See:
   # http://vpim.rubyforge.org/
-  class VpimTemplate < Template
+  class IcalTemplate < Template
     def initialize_engine
       return if defined?(::Vpim)
       require_template_library 'vpim/icalendar'
@@ -27,7 +27,7 @@ module Tilt
       data.to_str
     end
   end
-  register 'vpim', VpimTemplate
+  register 'ical', IcalTemplate
 
 
 end

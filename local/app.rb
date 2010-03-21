@@ -1,6 +1,6 @@
 require 'lib/event'
 require 'lib/post'
-require 'lib/tilt/vpim_template'
+require 'lib/tilt/ical_template'
 
 set :haml, { :format => :html5, :escape_html => true, :attr_wrapper => '"' }
 
@@ -58,9 +58,9 @@ get "/resources" do
   cache haml(:resources, :locals => { :grouped_resources => grouped_resources })
 end
 
-def vpim(template=nil, options={}, locals={}, &block)
+def ical(template=nil, options={}, locals={}, &block)
   template = Proc.new { block } if template.nil?
-  render :vpim, template, options.merge(render_options(:vpim, template)), locals
+  render :ical, template, options.merge(render_options(:ical, template)), locals
 end
 
 get "/events" do
@@ -93,5 +93,5 @@ mime_type :calendar, 'text/calendar'
 get "/events.ics" do
   content_type :calendar, :charset => "utf-8"
   @events = Event.upcoming
-  cache vpim(:events)
+  cache ical(:events)
 end
