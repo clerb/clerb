@@ -158,10 +158,10 @@ blockquote
 
     a
       text-decoration: none
-      :color= !yellow
+      color= !yellow
 
   .content
-    :color= !yellow
+    color= !yellow
 
   .presenter
     color: white
@@ -181,11 +181,42 @@ blockquote
       text-align: center
 
 .posts
+  .date
+    color: #6c6757
+    font-size: .8em
+
   a.permalink
     background-image: url('/images/icons/permalink.gif')
     background-position: center left
     background-repeat: no-repeat
     padding-left: 20px
+
+  h3
+    font-family: Georgia, serif
+    font-size: 1.5em
+    line-height: 1.5em
+    font-weight: normal
+
+    a
+      text-decoration: none
+      color: white
+      &:hover
+        text-decoration: underline
+
+  color= !yellow
+
+  .from
+    font-weight: bold
+
+    a
+      text-decoration: none
+      color= !yellow
+      &:hover
+        color: white
+
+  .body p
+    font-size: .8em
+
 
 .big-divider
   padding-top: 60px
