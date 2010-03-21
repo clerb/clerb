@@ -1,7 +1,7 @@
 .next-event
   != partial :next_event, :event => next_event
 
-.row
+.row.big-divider
   .posts.todo.column.grid_7
     != partial :grouped_post, :collection => grouped_posts, :object => :post_group
 
