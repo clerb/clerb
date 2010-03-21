@@ -50,7 +50,7 @@ class Event < Page
   end
 
   def presenter_bio
-    @presenter_bio ||= metadata("presenter_bio")
+    @presenter_bio ||= formatted_metadata("presenter_bio")
   end
 
   def location

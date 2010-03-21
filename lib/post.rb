@@ -38,14 +38,7 @@ class Post < Page
   end
 
   def from
-    if from_text = metadata("from")
-      case @format
-      when :textile
-        RedCloth.new(from_text).to_html
-      else
-        Maruku.new(from_text).to_html
-      end.gsub(%r{<p>(.*)</p>}, '\1')
-    end
+    formatted_metadata("from")
   end
 
 end
