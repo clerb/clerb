@@ -7,6 +7,7 @@ module Tilt
     def initialize_engine
       return if defined?(::Vpim)
       require_template_library 'ri_cal'
+      require 'tzinfo'
     end
 
     def prepare

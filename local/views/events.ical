@@ -1,6 +1,6 @@
 @events.each do |event|
   cal.event do
-    dtstart       event.date
+    dtstart       event.date.set_tzid(:floating)
     dtend         event.date
     summary       event.title
     description   event.body
