@@ -184,11 +184,7 @@ blockquote
   .group
     color: #6c6757
     font-size: .8em
-    background-image: url(/images/border_line.png)
-    background-repeat: repeat-x
-    padding-top: .5em
     padding-bottom: 1em
-    width: 90%
 
   a.permalink
     background-image: url('/images/icons/permalink.gif')
@@ -228,6 +224,14 @@ blockquote
     background-repeat: no-repeat
     background-position: 0px 5px
     padding-left: 45px
+
+.post_group
+  background-repeat: repeat-x
+  padding-top: .5em
+
+.post + .post_group
+  background-image: url(/images/border_line.png)
+  padding-top: 1em
 
 .big-divider
   padding-top: 60px
