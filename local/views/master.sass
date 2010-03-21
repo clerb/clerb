@@ -173,12 +173,22 @@ blockquote
     font-size: 1.2em
 
   .event-date
-    +grid_left_margin(8)
-    +grid(4)
+    +grid_left_margin(5)
+    +grid(7)
 
-    .event-button
-      border: solid 1px red
+    a.event-button
+      margin-top: 1em
+      display: block
+      float: right
       text-align: center
+      background-image: url(/images/red_pill.png)
+      background-repeat: no-repeat
+      width: 450px
+      height: 54px
+      padding-top: 1em
+      font-weight: bold
+      text-shadow: #111 2px 1px 2px
+      text-decoration: none
 
 .posts
   .group

@@ -13,7 +13,7 @@
 
 .row
   .event-date.column
-    .event-button
+    %a.event-button{ :href => event.permalink, :title => event.title }
       != succeed " @ " do
         = pretty_date(event.date)
       = event.location_name
