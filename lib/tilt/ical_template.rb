@@ -6,21 +6,22 @@ module Tilt
   class IcalTemplate < Template
     def initialize_engine
       return if defined?(::Vpim)
-      require_template_library 'vpim/icalendar'
+      require_template_library 'ri_cal'
     end
 
     def prepare
     end
 
     def evaluate(scope, locals, &block)
-      cal = Vpim::Icalendar.create2
       if data.respond_to?(:to_str)
-        locals[:cal] = cal
+        cal = RiCal.Calendar
+        cal.prodid = "Cleveland Ruby Brigade"
+        locals[:cal] = RiCal::Component::ComponentBuilder.new(cal)
         super(scope, locals, &block)
       elsif data.kind_of?(Proc)
-        cal.instance_eval(&data)
+        cal = RiCal.Calendar(&data)
       end
-      cal.encode
+      cal.to_s
     end
 
     def precompiled_template(locals)

@@ -5,7 +5,7 @@ gem "haml", "2.2.20"
 gem "maruku", "0.6.0"
 gem "RedCloth", "4.2.2"
 gem "sinatra", "1.0.b"
-gem "vpim", "0.695"
+gem "ri_cal", "0.8.5"
 
 group :development do
   gem "shotgun"

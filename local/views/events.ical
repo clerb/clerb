@@ -1,15 +1,10 @@
 @events.each do |event|
-  cal.add_event do |e|
-    e.dtstart       event.date
-    e.dtend         event.date
-    e.summary       event.blurb
-    e.description   event.body
-    e.url           'http://www.clerb.org%s' % event.permalink
-    e.sequence      0
-    e.access_class  "PRIVATE"
-    e.transparency  'OPAQUE'
-    now = Time.now
-    e.created       now
-    e.lastmod       now
+  cal.event do
+    dtstart       event.date
+    dtend         event.date
+    summary       event.title
+    description   event.body
+    url           'http://www.clerb.org%s' % event.permalink
+    location      event.location_name
   end
 end
