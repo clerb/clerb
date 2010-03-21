@@ -5,3 +5,8 @@
     != post.from
 != post.body
 %a{:href => post.permalink, :title => post.heading, :class => "permalink"} permalink
+
+- if post.comments_enabled?
+  != partial :comments, :post => post
+
+

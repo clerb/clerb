@@ -3,6 +3,7 @@ date: Monday March 15, 2010
 from: [Advance 20/30](http://advance2030.wordpress.com)
 topic: Getting Started
 sticky: true
+comments: true
 
 # Ruby on Rails 101
 

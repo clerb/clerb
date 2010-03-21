@@ -10,7 +10,7 @@ author:
 # site's short name here. A comment form will automatically be added to
 # the bottom of your pages.
 #
-# disqus_short_name: mysite
+disqus_short_name: clerb
 
 # The remaining configuration settings are set separately in development
 # (i.e. when running on your local workstation) and production (when running

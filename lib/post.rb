@@ -33,6 +33,10 @@ class Post < Page
     @sticky ||= metadata("sticky")
   end
 
+  def comments_enabled?
+    @comments_enbaled ||= metadata("comments")
+  end
+
   def url
     @url ||= metadata("url")
   end
