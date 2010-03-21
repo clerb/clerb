@@ -67,7 +67,7 @@ end
 get "/events/*" do
   set_from_config(:google_analytics_code)
   event = Event.find_by_path(File.join(params[:splat]))
-  cache haml(:event, :locals => { :event => event })
+  cache haml(:event, :locals => { :event => event, :page_class => "event" })
 end
 
 get "/posts/*" do
