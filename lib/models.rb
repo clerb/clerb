@@ -92,7 +92,19 @@ class FileModel
     def metadata(key)
       @metadata[key]
     end
-    
+
+    def formatted_metadata(key)
+      text = metadata(key)
+      case @format
+      when :textile
+        RedCloth.new(text).to_html
+      when :mdown
+        Maruku.new(text).to_html
+      else
+        text
+      end.gsub(%r{^<p>(.*)</p>$}, '\1')
+    end
+
     def paragraph_is_metadata(text)
       text.split("\n").first =~ /^[\w ]+:/
     end
