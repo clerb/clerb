@@ -1,10 +1,10 @@
 .date
   = pretty_date(event.date)
 %h1
-  != partial :ical_link
   = event.title
 .description
   != event.body
+!= partial :ical_link
 - with_presenter(event) do
   %em Who
   .presenter

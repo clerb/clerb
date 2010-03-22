@@ -2,7 +2,6 @@
   .column
     .next-blurb At the next CleRb...
     %h2
-      != partial :ical_link
       %a{:href => event.permalink, :title => event.title}= event.title
 
     .content
@@ -18,3 +17,6 @@
       != succeed " @ " do
         = pretty_date(event.date)
       = event.location_name
+
+.row.ical
+  != partial :ical_link

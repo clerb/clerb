@@ -1,6 +1,7 @@
 %h1
-  != partial :ical_link
   Events
+
+!= partial :ical_link
 
 - if upcoming_events.any?
   %h3 Upcoming
