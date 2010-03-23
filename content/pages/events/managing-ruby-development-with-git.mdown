@@ -1,9 +1,0 @@
-date: May 24, 2010 7:00 PM
-presenter: Jonathan Penn
-presenter_bio: Jonathan is the dude. He does [iPhone development](http://www.navellabs.com), knows Git, harveys data, and sings and write songs on top of all that! Hire him for your next wedding, bar mitzvah, or web project!
-location: LeanDog Software
-blurb: Continuing in our series, Jonathan Penn will be showing how to use Git to manage your Ruby source code. Description TBD.
-
-# Managing Ruby Development with Git
-
-Continuing in our series, Jonathan Penn will be showing how to use Git to manage your Ruby source code. Description TBD.
