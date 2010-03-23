@@ -1,0 +1,16 @@
+date: March 29, 2010 7:00 PM
+presenter: Joe Fiorini & Nate Klaiber
+presenter_bio: Joe & Nate work together at [Within3](http://www.within3.com). They are full time Ruby on Rails developers who are very passionate about crafting great websites. Joe implemented the site on [Nesta](http://effectif.com/nesta) based on the requirements for CleRB. Nate implemented a Google analytics strategy so we can track site usage.
+location: LeanDog Software
+blurb: We have a new website! Joe & Nate walk us through the implementation of the site and the decisions that went into it.
+
+# The New clerb.org Walkthrough
+
+We launched our new website! To celebrate we're taking a break from the Rails app series; Nate Klaiber and Joe Fiorini will be presenting an overview of the tools we used to go from 0 to launch in 1 week (while still managing our day jobs). We'll be discussing:
+
+- Using Nesta as a CMS to get up and going quickly
+- Intro to Haml/Sass
+- Intro to Sinatra
+- Intro to Heroku
+
+If you ever wanted to quickly setup your own bare bones website in Ruby (and have some prior Ruby experience), this meeting will show you what you need to know. If you haven't used the language this will give you a great introduction to what Ruby can do!
