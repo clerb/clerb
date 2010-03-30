@@ -1,0 +1,7 @@
+date: April 8, 2010 6:30 PM
+location: Edisons Pub
+blurb: The first of many social gatherings to talk and ask questions about Ruby, Agile development, anything you want!
+
+# Beer.rb
+
+We love talking geek, right? This is the first of many social get togethers to talk and ask questions over a beer. While we're at it, we'll get a good sampling of Cleveland area bars. Bring your laptop if you want, but be aware this is a talking focused group and there's no guarantee we'll have wifi. There is no plan or agenda to these events, we're just getting together and talking over beers. Hope to see you there!

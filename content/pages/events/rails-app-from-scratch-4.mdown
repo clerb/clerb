@@ -1,0 +1,10 @@
+date: April 26, 2010 7:00 PM
+presenter: 
+presenter_bio: 
+location: LeanDog Software
+blurb: Presentation continuing in our "Rails App from Scratch" series.
+
+# Rails App from Scratch part 4
+
+Topic & presenter TBD.
+

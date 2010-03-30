@@ -1,0 +1,8 @@
+date: April 12, 2010 6:00 PM
+location: Gypsy Beans and Baking Co
+blurb: Getting together to plan out the few months of meetings. If you want to voice your opinion, this is the meeting for you.
+
+# Planning Session
+
+Want a say in the future of the Cleveland Ruby Brigade? We'll be meeting to plan out the next few months of meetings, including the remainder of our "Rails App from Scratch" series. If you've every had any thoughts on how to make the group better, now is your chance to express your opinion.
+
