@@ -8,6 +8,29 @@
       <!--[if lte IE 8]>
       <script src="/javascripts/html5.js" type="text/javascript"></script>
       <![endif]-->
+    %script(language="javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js")
+    :plain
+      <script language="javascript"> 
+        $(document).ready(function(){
+          $("form#subForm label").each(function(i){
+            var input_id = $(this).attr("for");
+            var $txtBox = $("#" + input_id);
+            var value = $(this).html();
+            $txtBox.val(value);
+            $(this).hide();
+            $txtBox.click(function() {
+              if($(this).val() == value){
+                $(this).val("");
+              }
+            });
+            $txtBox.blur(function() {
+              if($(this).val() == ""){
+                $(this).val(value);
+              }
+            });
+          });
+        });
+      </script> 
     %link(href="/css/master.css" media="screen" rel="stylesheet" type="text/css")
     %link(href="#{base_url}/posts.xml" rel="alternate" title="Posts Feed" type="application/atom+xml")
   %body(class=@page_class)
