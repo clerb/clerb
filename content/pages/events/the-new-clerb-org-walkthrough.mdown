@@ -1,4 +1,4 @@
-date: March 29, 2010 7:00 PM
+date: April 5, 2010 7:00 PM
 presenter: Joe Fiorini & Nate Klaiber
 presenter_bio: Joe & Nate work together at [Within3](http://www.within3.com). They are full time Ruby on Rails developers who are very passionate about crafting great websites. Joe implemented the site on [Nesta](http://effectif.com/nesta) based on the requirements for CleRB. Nate implemented a Google analytics strategy so we can track site usage.
 location: LeanDog Software
