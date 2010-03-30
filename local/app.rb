@@ -37,12 +37,6 @@ helpers do
     super(template, options.merge(render_options(:builder, template)), &block)
   end
 
-  def page_wrapper(&block)
-    page_class = "page"
-    page_class << eval("if defined?(page_class) then ' %s' % page_class end", block.binding).to_s
-    haml_tag(:div, :class => page_class, &block)
-  end
-
   def url_for_ical
     basename = "CleRB-Events.ics"
     path = "webcal://%s/%s" % [request.host, basename]
@@ -72,25 +66,29 @@ get "/events" do
   set_from_config(:google_analytics_code)
   upcoming_events = Event.upcoming
   past_events = Event.past
-  cache haml(:events, :locals => { :upcoming_events => upcoming_events, :past_events => past_events, :page_class => 'events' })
+  @page_class = 'events'
+  cache haml(:events, :locals => { :upcoming_events => upcoming_events, :past_events => past_events })
 end
 
 get "/events/next" do
   set_from_config(:google_analytics_code)
   event = Event.next
-  cache haml(:event, :locals => { :event => event, :page_class => "event" })
+  @page_class = 'event'
+  cache haml(:event, :locals => { :event => event })
 end
 
 get "/events/*" do
   set_from_config(:google_analytics_code)
   event = Event.find_by_path(File.join(params[:splat]))
-  cache haml(:event, :locals => { :event => event, :page_class => "event" })
+  @page_class = 'event'
+  cache haml(:event, :locals => { :event => event })
 end
 
 get "/posts/*" do
   set_from_config(:google_analytics_code)
   post = Post.find_by_path(File.join(params[:splat]))
-  cache haml(:post_full, :locals => { :post => post, :page_class => "post" })
+  @page_class = 'post'
+  cache haml(:post_full, :locals => { :post => post })
 end
 
 get "/posts.xml" do

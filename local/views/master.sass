@@ -16,6 +16,39 @@ body
   background-image: url(/images/container_bg.jpg)
   border-bottom: solid 1px #656461
 
+body.event
+  .date
+    color= !red
+    position: relative
+    top: .3em
+    font-size: 1em
+  em
+    display: block
+    width: 50%
+    padding-bottom: 5px
+    margin-bottom: 5px
+    text-transform: uppercase
+    border-bottom: solid 2px
+    border-bottom-color= !medium_grey
+    font-style: normal
+  .presenter
+    font-size: .9em
+    strong
+      color= !yellow
+    .bio
+      padding-top: 5px
+      padding-bottom: 20px
+      width: 50%
+  .venue
+    font-size: .9em
+    strong
+      color= !yellow
+      display: block
+
+body.post
+  .from
+    margin-bottom: 15px
+
 #wrapper
   +full_grid_width
   margin: 0 auto
@@ -32,38 +65,6 @@ body
       a
         color= !yellow
         text-decoration: none
-  .event
-    .date
-      color= !red
-      position: relative
-      top: .3em
-      font-size: 1em
-    em
-      display: block
-      width: 50%
-      padding-bottom: 5px
-      margin-bottom: 5px
-      text-transform: uppercase
-      border-bottom: solid 2px
-      border-bottom-color= !medium_grey
-      font-style: normal
-    .presenter
-      font-size: .9em
-      strong
-        color= !yellow
-      .bio
-        padding-top: 5px
-        padding-bottom: 20px
-        width: 50%
-    .venue
-      font-size: .9em
-      strong
-        color= !yellow
-        display: block
-  .post
-    .from
-      margin-bottom: 15px
-
 
 nav
   ul
@@ -153,10 +154,6 @@ a.ical
   background-repeat: no-repeat
   background-position: 0 middle
   padding-left: 20px
-
-.events,.event
-  a.ical img
-    vertical-align: -10%
 
 h1, h2
   color: #fff
