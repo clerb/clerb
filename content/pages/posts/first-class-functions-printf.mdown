@@ -1,0 +1,8 @@
+url: http://slightlynew.blogspot.com/2010/03/first-class-functions-make-printf.html
+date: Sunday March 21, 2010
+from: [Slightly New](http://slightlynew.blogspot.com)
+
+# First-class functions make printf-debugging obsolete
+
+Lee gives a great explanation of bindings by showing how we can use them to make debugging easier. I like that he works from a very simple example all the way up to a Sinatra app.
+

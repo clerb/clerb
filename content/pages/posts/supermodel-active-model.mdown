@@ -1,0 +1,8 @@
+url: http://www.rubyinside.com/supermodel-activemodel-powered-simple-in-memory-database-3172.html
+date: Monday March 26, 2010
+from: [Ruby Inside](http://www.rubyinside.com)
+
+# Supermodel: Simple ActiveModel-Powered In-Memory Models
+
+If you've ever wished to be able to use the power of ActiveRecord (callbacks, validations, observers, etc) without the need to persist to disk this is the ORM for you. Supermodel implements Rails 3.0's ActiveModel spec to give full Rails compatibility with the speed of in-memory processing.
+

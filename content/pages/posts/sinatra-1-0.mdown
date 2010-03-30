@@ -1,0 +1,8 @@
+url: http://www.rubyinside.com/sinatra-1-0-released-3162.html
+date: Monday March 29, 2010
+from: [Ruby Inside](http://www.rubyinside.com)
+
+# Sinatra 1.0 Released
+
+If you don't know about [Sinatra](http://www.sinatrarb.com) yet, now is the time to learn. Sinatra is a small web framework for those web apps that don't need the full power of Rails, but are too complex to stay static. The authors have just hit the 1.0 milestone, and I can say it has matured since [I first used it in 2008](http://vimeo.com/2374819). In fact, it's running this site right now!
+

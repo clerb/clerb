@@ -1,0 +1,7 @@
+url: http://weblog.rubyonrails.org/2010/3/24/rails-and-the-enterprise
+date: Wednesday March 24, 2010
+from: [Riding Rails](http://weblog.rubyonrails.org)
+
+# Rails and the Enterprise
+
+I get this question a lot: is Rails really usable in the enterprise? Not only is it usable, it's being used by giants like [AT&T](http://www.yellowpages.com), Chase, Sony, etc. This article revisits some of the old arguments and explains why they just aren't true anymore. If you're trying to convince your company to make the switch, this may help.
