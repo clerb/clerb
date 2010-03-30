@@ -1,0 +1,7 @@
+url: http://www.engineyard.com/blog/2010/the-lowdown-on-routes-in-rails-3/
+date: Tuesday March 30, 2010
+from: [Engine Yard](http://www.engineyard.com)
+
+# The Lowdown on Routes in Rails 3
+
+Rails 3.0 comes with loads of improvements to the Rails routing DSL. Check out this post to learn about the changes and how to use them!
