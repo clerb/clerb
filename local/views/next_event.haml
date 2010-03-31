@@ -14,11 +14,9 @@
 .row
   .upcoming-events-teaser.column
     %a(href="/events") See all of our events
+    != partial :ical_link
   .event-date.column
     %a.event-button{ :href => event.permalink, :title => event.title }
       != succeed " @ " do
         = pretty_date(event.date)
       = event.location_name
-
-.row.ical
-  != partial :ical_link
