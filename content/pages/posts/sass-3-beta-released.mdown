@@ -1,0 +1,7 @@
+url: http://nex-3.com/posts/94-haml-sass-3-beta-released
+date: Wednesday March 31, 2010
+from: [Nathan Weizenbaum](http://www.nex-3.com)
+
+# Sass 3 Beta Released!
+
+If you aren't familiar with [Sass](http://www.sass-lang.com) it's a preprocessor for CSS. Think of it as a CSS view engine. It allows you to reuse whatever pieces/parts of your stylesheets you want, and provides a much cleaner syntax for defining selectors. One of the biggest complaints I've heard about it is that it is __too__ different from CSS which makes for a higher learning curve. Today brings us the first beta of Sass 3, which includes an alternative syntax that is a true subset of CSS, meaning your CSS will work **as is** in Sass. If you already use Sass, make sure you read [SCSS for Sass Users](http://beta.sass-lang.com/docs/yardoc/file.SCSS_FOR_SASS_USERS.html).
