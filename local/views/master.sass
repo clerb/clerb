@@ -204,18 +204,23 @@ blockquote
     +grid(7)
 
     a.event-button
+      font-size: 1.1em
+      margin-right: 6px
+      margin-bottom: 6px
+      background= !red
       margin-top: 1em
-      display: block
+      padding: 15px 25px
+      background-image: url(/images/clear-gradient.png)
+      background-repeat: repeat-x
+      -webkit-border-radius: 15px
+      -webkit-box-shadow: 2px 2px 2px black
       float: right
       text-align: center
-      background-image: url(/images/red_pill.png)
-      background-repeat: no-repeat
-      width: 450px
-      height: 54px
-      padding-top: 1em
       font-weight: bold
       text-shadow: #111 2px 1px 2px
       text-decoration: none
+      &:hover
+        background-color= !red - 20
 .upcoming-events-teaser
   margin-top: 1.5em
   margin-bottom: 1.5em
