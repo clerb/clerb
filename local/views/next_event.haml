@@ -5,11 +5,11 @@
       %a{:href => event.permalink, :title => event.title}= event.title
 
     .content
-      %span.presenter
-        != precede "Presented by " do
-          %strong= event.presenter_name
-      != precede "&ndash; " do
-        = event.blurb
+      - with_presenter(event) do
+        %span.presenter
+          != surround "Presented by ", "&ndash;" do
+            %strong= event.presenter_name
+      != event.blurb
 
 .row
   .upcoming-events-teaser.column
