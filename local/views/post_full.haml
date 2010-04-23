@@ -1,8 +1,9 @@
 %h1
   %a{:href => post.url, :title => post.heading}= post.heading
-.from
-  != precede "From: " do
-    != post.from
+- if !post.from.empty?
+  .from
+    != precede "From: " do
+      != post.from
 != post.body
 %a{:href => post.permalink, :title => post.heading, :class => "permalink"} permalink
 

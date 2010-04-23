@@ -1,9 +1,10 @@
-.post
+%div{:class => if post.url then "post-external" else "post" end}
   %h3
-    %a{:href => post.url, :title => post.heading}= post.heading
-  %span.from
-    != precede "From: " do
-      != post.from
+    %a{:href => post.url || post.permalink, :title => post.heading}= post.heading
+  - if !post.from.empty?
+    %span.from
+      != precede "From: " do
+        != post.from
   .body
     != post.body
   %a{:href => post.permalink, :title => post.heading, :class => "permalink"} permalink
