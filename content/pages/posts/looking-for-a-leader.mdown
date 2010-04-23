@@ -1,0 +1,10 @@
+date: Friday April 23, 2010
+from: 
+
+# Looking for a Leader
+
+Some of you have probably been wondering what has been going on with the Cleveland Ruby Brigade lately. We haven't been meeting consistently and meetings have been planned with very short notice. The simple reason for that is: me. I've been running the  group for two years now with help off and on from other members. Over the past couple years my goals have evolved and running the user group doesn't fit in as much anymore. I apologize that I waited so long to do this; quality has definitely been waning and it is my fault. It's difficult to admit that I can't handle something anymore, especially when I have to do so publicly. I hope you all can forgive me.
+
+I do not want to see this group fall apart. Therefore, it's time for me to pass the torch. I am looking to you, the members, for a new leader. Someone who has a passion for Ruby and software craftsmanship. You don't need to do Ruby full time to run CleRB (I was still a .NET developer when I started the group). The leader's responsibilities include notifying people of meetings, planning when meetings will be held, working with sponsors, etc. It is well worth the work to see the Ruby community grow and prosper here in Cleveland.
+
+If you are interested in running the group please contact me at __organizer__ at __clerb__ dot __org__. I will help as much as I need to to ensure a smooth transition, and would happily continue to be involved however necessary as time goes on. You will not be alone. Many great members have been willing to jump in when needed and I'm sure they will continue to do so in the future.
