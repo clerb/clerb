@@ -1,5 +1,6 @@
 date: Friday April 23, 2010
 from: 
+comments: true
 
 # Looking for a Leader
 
