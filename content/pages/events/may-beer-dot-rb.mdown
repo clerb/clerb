@@ -1,6 +1,4 @@
 date: May 6, 2010 6:30 PM
-presenter: 
-presenter_bio: 
 location: The Treehouse
 blurb: The second of many social gatherings to talk and ask questions about Ruby, Agile development, anything you want!
 
