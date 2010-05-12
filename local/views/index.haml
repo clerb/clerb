@@ -1,5 +1,6 @@
-.next-event
-  != partial :next_event, :event => next_event
+- if next_event
+  .next-event
+    != partial :next_event, :event => next_event
 
 .row.big-divider
   .posts.todo.column.grid_7
